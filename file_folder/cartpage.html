@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+              <!-- Logo and Search Bar: 8 columns -->
+              <div class="col-lg-8 d-flex align-items-center">
+                <a class="navbar-brand logo" href="#"> <h2 class="logo-text">SaraxShop</h2> </a>
+                <form class="form-inline ml-3 d-none d-md-flex w-100">
+                    <input class="form-control mr-sm-2 w-100" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light button ms-2" type="submit">Search</button>
+                  </form>
+            </div>
+              
+              <!-- Navbar Toggler for smaller screens -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+   
+              <!-- List Items and Cart Icon: 4 columns -->
+              <div class="collapse navbar-collapse col-lg-4 justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Shop</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#" id="cartIcon">
+                              <i class="fas fa-shopping-cart"></i> <span class="badge badge-light">3</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <div class="cart-container">
+        <h2>Your Shopping Cart</h2>
+        
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="product-image.jpg" alt="Product Image" class="cart-item-image">
+                <a href="#" class="cart-item-title">Product Title</a>
+                <div class="cart-item-price">$20.00</div>
+                <input type="number" value="1" class="cart-item-quantity" min="1">
+                <button class="remove-item">Remove</button>
+            </div>
+            <div class="cart-item">
+              <img src="product-image.jpg" alt="Product Image" class="cart-item-image">
+              <a href="#" class="cart-item-title">Product Title</a>
+              <div class="cart-item-price">$20.00</div>
+              <input type="number" value="1" class="cart-item-quantity" min="1">
+              <button class="remove-item">Remove</button>
+          </div>
+          <div class="cart-item">
+            <img src="product-image.jpg" alt="Product Image" class="cart-item-image">
+            <a href="#" class="cart-item-title">Product Title</a>
+            <div class="cart-item-price">$20.00</div>
+            <input type="number" value="1" class="cart-item-quantity" min="1">
+            <button class="remove-item">Remove</button>
+        </div>
+        <div class="cart-item">
+          <img src="product-image.jpg" alt="Product Image" class="cart-item-image">
+          <a href="#" class="cart-item-title">Product Title</a>
+          <div class="cart-item-price">$20.00</div>
+          <input type="number" value="1" class="cart-item-quantity" min="1">
+          <button class="remove-item">Remove</button>
+      </div>
+            <!-- Repeat for other products -->
+        </div>
+        
+        <div class="cart-summary">
+            <div class="subtotal">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">$40.00</span>
+            </div>
+            <div class="total">
+                <span>Total:</span>
+                <span id="cart-total">$40.00</span>
+            </div>
+            <a href="check-outpage1.html"><button class="proceed-checkout">Proceed to Checkout</button>
+            </a>
+        </div>
+        
+        <div class="cart-footer">
+            <a href="../product.html"><button class="continue-shopping">Continue Shopping</button></a>
+        </div>
+    </div>
+
+    
+
+      
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4 ">
+        <div class="container">
+          <div class="row">
+            <!-- Company Info -->
+            <div class="col-12 col-md-4 mb-4">
+              <h5>About MyStore</h5>
+              <p>
+                Your one-stop shop for quality products at unbeatable prices.
+                <br />We pride ourselves on offering <br> the best shopping
+                experience.
+              </p>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white no-underline">About Us</a></li>
+                <li>
+                  <a href="#" class="text-white no-underline">Contact Us</a>
+                </li>
+                <li><a href="#" class="text-white no-underline">Careers</a></li>
+              </ul>
+            </div>
+            <!-- Customer Service -->
+            <div class="col-12 col-md-4 mb-4">
+              <h5>Customer Service</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white no-underline">Help & FAQ</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white no-underline"
+                    >Shipping & Returns</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white no-underline">Order Tracking</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white no-underline">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white no-underline"
+                    >Terms & Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-12 col-md-4 mb-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white no-underline">New Arrivals</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white no-underline">Best Sellers</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white no-underline">Special Offers</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white no-underline">Gift Cards</a>
+                </li>
+                <li><a href="#" class="text-white no-underline">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="row mt-4">
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+              <h5>Follow Us</h5>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-white no-underline"
+                    ><i class="fab fa-facebook-f"></i> Facebook</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white no-underline"
+                    ><i class="fab fa-twitter"></i> Twitter</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white no-underline"
+                    ><i class="fab fa-instagram"></i> Instagram</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white no-underline"
+                    ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white no-underline"
+                    ><i class="fab fa-youtube"></i> YouTube</a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <div class="col-12 col-md-6 text-md-right">
+              <p>&copy; 2024 MyStore. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+  
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script>
+          function displayProductDetails() {
+      const product = getQueryParams();
+      console.log("Received Image Path:", product.image); // Debugging: Check the received path
+      document.getElementById('productImage').src = product.image;
+      document.getElementById('productTitle').textContent = product.title;
+      document.getElementById('productPrice').textContent = `$${product.price}`;
+  }
+        </script>
+  
+    </body>
+  </html>
+  
+</body>
+</html>
